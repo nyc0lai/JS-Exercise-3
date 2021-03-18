@@ -1,14 +1,49 @@
-let userName = 'Gheorghe Zama';
+let userName = 'Crisitina';
 
-let userQuestion =  "Cind vine ursu?";
+let userQuestion =  `cum crede-ți ce procent din cursanți vor ajunge pînă la sfîrșit de curs?`;
 
 let randomNumber = Math.floor(Math.random() * 8);
 
-let eightBall = "";
+let eightBall;
 
+userName ? console.log(`Salut ${userName}!`): console.log('Salut draga user necunoscut!');
 
+if (userName) {
+    console.log(`Dragă ${userName} ${userQuestion}`);
+} else {
+    console.log('Vino să faci parte din echipa noastră!');
+}
 
-userName ? console.log(`Hello, ${userName}!`): console.log('Hello!');
-
-console.log(`${userQuestion} dear ${userName}`);
-//console.log(userName);
+switch (randomNumber) {
+    case 0 :
+        eightBall = 'Nici unu';
+        break;
+    case 1 :
+        eightBall = '5% +';
+        break;
+    case 2 :
+        eightBall = 'Toți';
+        break;
+    case 3 :
+        eightBall = '50% +';
+        break;
+    case 4 :
+        eightBall = '90% +';
+        break;
+    case 5 :
+            eightBall = 'Nu am nici cea mai mică ideie';
+        break;
+    case 6 :
+            eightBall = 'Ne stăruim cît mai mulți';
+        break;
+    case 7 :
+            eightBall = 'Vom ajunge și vom vedea';
+        break;
+    default:
+        console.log('8 Ball ERROR');
+    }
+if (userName) {
+    console.log(eightBall);
+} else {
+    console.log('https://boogeek.com');
+}
