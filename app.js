@@ -2,9 +2,9 @@ let userName = 'Crisitina';
 
 let userQuestion =  `cum crede-ți ce procent din cursanți vor ajunge pînă la sfîrșit de curs?`;
 
-let randomNumber = Math.floor(Math.random() * 8);
+let randomNumber = Math.floor(Math.random() * 9);
 
-let eightBall;
+let eightBall = "E timpu sa faci un rewiew la cod";
 
 userName ? console.log(`Salut ${userName}!`): console.log('Salut draga user necunoscut!');
 
